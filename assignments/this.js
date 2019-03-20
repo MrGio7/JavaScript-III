@@ -51,7 +51,7 @@ function NPC(talk) {
 
 // code example for Explicit Binding
 function Player(answer){
-    NPC.apply(this, this.greeting)
+    NPC.call(this, answer)
     this.answer = 'i`m here to take a quest';
     this.myName = answer;
     this.speak = function() {
